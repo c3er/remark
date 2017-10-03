@@ -28,12 +28,8 @@ if ($MyInvocation.BoundParameters.Keys -match 'path') {
     $destPath = Read-Host -Prompt "Give destination path"
 }
 
-if (Test-Path $destPath) {
-    if (-Not (Test-Path $destPath -PathType Container)) {
-        Error "Given path does not lead to a directory"
-    }
-} else {
-    New-Item -ItemType directory -Path $destPath >$null 2>&1
+if ((Test-Path $destPath) -And -Not (Test-Path $destPath -PathType Container)) {
+    Error "Given path does not lead to a directory"
 }
 
 foreach ($file in $files) {
