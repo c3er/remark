@@ -4,7 +4,8 @@ Param(
 
 $files = @(
     "out",
-    "boilerplate-local.html"
+    "boilerplate-local.html",
+    "content.md"
 )
 
 function Error([string]$msg) {
