@@ -4,7 +4,7 @@ Param(
 
 $files = @(
     "out",
-    "boilerplate-local.html",
+    "presentation.html",
     "content.md"
 )
 
