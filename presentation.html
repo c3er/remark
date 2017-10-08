@@ -1,47 +1,48 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Präsentation</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <style type="text/css">
+            body {
+                font-family: sans-serif;
+            }
 
-<head>
-    <title>My Awesome Presentation</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <style type="text/css">
-        body {
-            font-family: sans-serif;
-        }
+            h1, h2, h3, h4 {
+                font-family: sans-serif;
+                margin-top: 0.4em;
+                margin-bottom: 0.4em;
+            }
 
-        h1,
-        h2,
-        h3 {
-            font-family: sans-serif;
-            margin-top: 0.4em;
-            margin-bottom: 0.4em;
-        }
+            h4, p, li {
+                font-size: 1.5em;
+            }
 
-        .remark-code,
-        .remark-inline-code {
-            font-family: monospace;
-        }
+            .remark-code,
+            .remark-inline-code {
+                font-family: monospace;
+                font-size: 1.1em;
+            }
 
-        .remark-container {
-            background: #000;
-        }
+            .remark-container {
+                background: #000;
+            }
 
-        .remark-slide-scaler {
-            box-shadow: 0 0 30px #000;
-        }
-    </style>
-</head>
+            .remark-slide-scaler {
+                box-shadow: 0 0 0px #000;
+            }
+        </style>
+    </head>
+    <body>
+        <textarea id="source"></textarea>
+        <script src="out/remark.js" type="text/javascript">
 
-<body>
-    <textarea id="source"></textarea>
-    <script src="out/remark.js" type="text/javascript">
-
-    </script>
-    <script type="text/javascript">
-        var slideshow = remark.create({
-            sourceUrl: "content.md"
-        });
-    </script>
-</body>
-
+        </script>
+        <script type="text/javascript">
+            var slideshow = remark.create({
+                sourceUrl: "content.md",
+                countIncrementalSlides: false
+            });
+        </script>
+    </body>
 </html>

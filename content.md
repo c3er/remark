@@ -14,6 +14,9 @@ Notes for the _first_ slide!
 2. Deep-dive
 3. ...
 
+- Some other
+- point
+
 [NOTE]: Note that you need remark.js alongside this html file, but no internet connection.
 ---
 
@@ -22,8 +25,6 @@ Notes for the _first_ slide!
 ## Point 1
 
 ### Sub point 1
-
-This is a test
 
 Some code
 
@@ -42,3 +43,15 @@ int add(int a, int b)
     return a + b;
 }
 ```
+
+---
+
+# Point
+
+## Sub point 1
+
+### Sub point 2
+
+#### Sub point 4
+
+This should have a proper size
